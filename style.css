@@ -4,7 +4,7 @@
 }
 
 #container {
-    display: grid;
+    display: grid; 
     grid: gap: 1em;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-colums: repeat(var(--grid-columns), 1fr);
