@@ -1,0 +1,18 @@
+:root {
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+}
+
+#container {
+    display: grid;
+    grid: gap: 1em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-colums: repeat(var(--grid-columns), 1fr);
+}
+
+.grid-item {
+    padding: 1em;
+    border: 1px solid #ddd;
+    text-align: center;
+
+}
