@@ -24,3 +24,28 @@ function makeGrid(rows, columns) {
     }
     createButton();
 }
+
+function createButton(){
+    const buttonDiv = document.querySelector("#buttonDiv");
+    const resetButton = document.createElement("button");
+    resetButton.textContent = "Reset Grid!";
+    resetButton.style.margin = "20px";
+    //buttonDiv.style.textAlightn ="center";
+    buttonDiv.appendChild(resetButton);
+
+resetButton.addEventListener('click', () =>{
+    document.querySelectorAll(".grid-item").forEach(e => e.remove());
+    let userGridInput = prompt ("please enter the number of grid squares per side (max: 100):");
+    if (userGridInput > 100) {
+        alert("your Dumb Af.");
+        return;
+    }
+    rows = userGridInput;
+    columns = userGridInput;
+    makeGrid(rows, columns);
+})
+}
+
+
+
+makeGrid(16, 16);
