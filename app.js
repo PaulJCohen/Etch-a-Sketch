@@ -42,6 +42,7 @@ function makeGrid(rows, columns) {
         const resetButton = document.createElement("button");
         resetButton.textContent = "Reset Grid!";
         resetButton.style.margin = "20px";
+        resetButton.style.backgroundColor = "Purple";
         buttonDiv.appendChild(resetButton);
 
         resetButton.addEventListener('click', () =>{
